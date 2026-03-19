@@ -1,6 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    margin: 0px;
 }
 
 header{
@@ -38,4 +38,25 @@ form input{
 
 a{
     text-decoration: none;
+}
+
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background-color: rgb(252, 144, 4);
+    width: 100%;
+    color: white;
+    height: 33vh;
+    padding-bottom: 80px;
+    padding-left: 40px;
+
+}
+
+#cta-btn{
+    border:none;
+    padding:12px;
+    width: 180px;
+    border-radius: 5px;
 }
