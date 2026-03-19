@@ -1,0 +1,39 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    
+    gap: 20px;
+}
+form{
+    display: flex;
+    border: 1px rgb(235, 225, 225) solid;
+    padding: 8px;
+    border-radius: 12px;
+    width: 30%;
+    justify-content: space-between;
+}
+img{
+    width: 25px;
+}
+#sign-in-button{
+    border-style: none;
+    background-color: white;
+    font-size: bold;
+    color:rgb(65, 56, 56) ;
+}
+form input{
+    border-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
