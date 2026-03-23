@@ -45,7 +45,8 @@ a{
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    background-color: rgb(252, 144, 4);
+    background: linear-gradient(to top, rgb(236, 182, 82), rgb(255, 136, 0));
+
     width: 100%;
     color: white;
     height: 43vh;
@@ -64,6 +65,9 @@ a{
 #hero-section h1{
     font-size: 60px;
     width: 50%;
+}
+#hero-p{
+    color: rgb(255, 225, 141);
 }
 
 @media( max-width:630px){
