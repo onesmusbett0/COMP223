@@ -63,7 +63,7 @@ a{
     border-radius: 5px;
 }
 #hero-section h1{
-    font-size: 60px;
+    font-size: 40px;
     width: 50%;
 }
 #hero-p{
@@ -101,7 +101,44 @@ a{
     color: orange;
 }
 
+#products-div{
+    display :flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid rgb(252 242 186);
+    margin: 30px;
+    padding-bottom: 30px;
+}
+#products-div img{
+    width: 100%;
+    object-fit: contain;
+}
+#ratings-div{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+#title-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
+}
+#title-div button{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: orange;
+    color: white;
+
+}
+#title-div i{
+    margin-left: 20px;
+}
 @media( max-width:630px){
     form input{
         display: none;
