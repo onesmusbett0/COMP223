@@ -69,6 +69,38 @@ a{
 #hero-p{
     color: rgb(255, 225, 141);
 }
+#main-div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.sub-div{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    margin-top: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.sub-div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-div h6, .sub-div p {
+    margin: 0;
+}
+
+.sub-div i{
+    font-size: 24px;
+    border: 1px solid rgb(229, 207, 207);
+    padding: 12px;
+    border-radius: 10px;
+    color: orange;
+}
+
 
 @media( max-width:630px){
     form input{
