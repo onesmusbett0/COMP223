@@ -100,6 +100,36 @@ a{
     border-radius: 10px;
     color: orange;
 }
+#products-div{
+    height: 62vh;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+
+}
+#products-div img{
+    width: 100%;
+    border: 1px solid orange;
+    padding-bottom: 20px;
+}
+#star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+#cart-button{
+    background-color: orange;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
 
 
 @media( max-width:630px){
