@@ -154,19 +154,23 @@ a{
 }
 
 #featured{
-    margin-left:40px;
-    margin-right:40px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns contents to the left */
 }
 
-#products-div{
+.product-card{
+    display: flex;
+    flex-direction: column;
     border:1px solid rgb(252,242,186);
     width:300px;
-    margin:30px;
+    margin: 30px auto; /* Centered card */
     box-shadow:2px 2px 5px rgb(255,244,221);
     padding-bottom:20px;
 }
 
-#products-div img{
+.product-card img{
     width:100%;
     object-fit:contain;
 }
