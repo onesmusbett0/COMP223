@@ -163,6 +163,7 @@ a{
 }
 #title-div{
     flex-direction: column;
+    
 }
 #title-div button{
     display: flex;
@@ -177,6 +178,10 @@ a{
 #title-div  i{
     margin-left: 20px;
 }
+#title-div h6, #title-div p{
+    margin: 0;
+}
+
 @media (max-width:536px){   
 
     #hero-section h1{
