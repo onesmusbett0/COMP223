@@ -6,6 +6,7 @@ body{
     font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
     margin:0;
     overflow-x: hidden; /* Fix overflow for the entire body */
+    background-color: #FEF9F3;
 }
 
 header{
@@ -19,7 +20,12 @@ header{
     justify-content:center;
     flex-wrap: wrap;
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #FEF9F3;
 }
+
 
 form{
     display:flex;
