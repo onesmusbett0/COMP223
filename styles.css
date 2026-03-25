@@ -1,16 +1,24 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body{
     font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
     margin:0;
+    overflow-x: hidden; /* Fix overflow for the entire body */
 }
 
 header{
     display:flex;
-    height:30px;
+    height:auto;
+    min-height:30px;
     align-items:center;
     gap:20px;
     margin-top:20px;
     margin-bottom:20px;
     justify-content:center;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 form{
@@ -47,11 +55,10 @@ a{
     justify-content:end;
     align-items:start;
     background:linear-gradient(to top,rgb(236,182,82),rgb(255,136,0));
-    width:100vw;
+    width:100%;
     color:white;
-    height:43vh;
-    padding-bottom:80px;
-    padding-left:20px;
+    min-height:43vh;
+    padding: 40px 20px 80px 20px;
 }
 
 #cta-btn{
@@ -72,21 +79,21 @@ a{
 
 #main-div{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 
 .sub-div{
     display:flex;
-    margin:20px;
-    justify-content:space-between;
+    margin:10px;
+    justify-content:center;
     align-items:center;
-    gap:50px;
-    margin-top:32px;
-    padding-left:12px;
-    padding-right:12px;
-}
+    gap:20px;
+    padding: 12px;
+    }
 
 .sub-div div{
     display:flex;
