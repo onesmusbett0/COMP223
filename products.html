@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africart - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="logo">
+            <h2>Africart</h2>
+            <a href="/">Home</a>
+            <a href="products.html">Products</a>
+        </div>
+
+        <form>
+            <input id="search-input" type="text" placeholder="search...">
+            <img src="search.png" id="search-btn" alt="Search">
+        </form>
+        <div>
+            <img id="cart-img" src="cart.png" alt="cart image">
+            <button class="btn-min" id="signin-btn">Sign In</button>
+        </div>
+        
+    </header>
+
+    <main>
+            <div id="side-bar">
+                <h1>All Products</h1>
+                <h4>Categories</h4>
+                <button id="all-categories">All</button>
+                <button class="btn-secondary">Audio</button>
+                <button  class="btn-secondary">Phones</button>
+                <button  class="btn-secondary">Computers</button>
+                <button  class="btn-secondary">Wearables</button>
+                <button  class="btn-secondary">Cameras</button>
+                <button  class="btn-secondary">Tablets</button>
+                <button  class="btn-secondary">Accessories</button>
+                <button  class="btn-secondary">Monitors</button>
+
+                <h5>Price Range</h5>
+                <input type="range" name="price-range" id="price-range" value="20">
+                <p>KES 300</p>
+                <button id="reset-filters">Reset Filters</button>
+            </div>
+            <div id="products-section">
+                <div id="sort-by">
+                    <p>12 Products found</p>
+                    <div>
+                        <p>Sort by: </p>
+                        <select name="" id="sort-option">
+                            <option>Featured</option>
+                            <option>Price:High to Low</option>
+                            <option>Price:Low to High</option>
+                            <option>Highest Rated</option>
+                            <option >Name:A to Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    </main>
+    
+
+    <footer>
+        <div id="">
+            <h4>About Africart</h4>
+            <p>Your one-stop shop for the latest tech products and accessories</p>
+
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="#products">All Products</a>
+            <a href="#products/audio">Audio</a>
+            <a href="#products/computers">Computers</a>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <a href="#contact">Contact Us</a>
+            <a href="#shopping">Shopping Info</a>
+            <a href="#Returns">Returns</a>
+        </div>
+        <div>
+            <h4>About</h4>
+            <a href="#sign in">Sign In</a>
+        </div>
+        
+
+    </footer>
+    <div id="copyright">
+            <hr>
+            <p>&copy 2026 -Africart. All rights Preserved</p>
+    </div>
+    
+</body>
+</html>
