@@ -277,19 +277,40 @@ footer{
     margin-top: auto;
     background-color:#fef9f3;
     border-top: 1px solid rgb(245, 229, 200);
-    align-items: start;
+    
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    
 
 }
 footer div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: start;
     
     
 }
 footer a{
     color: #6d583e;
+    text-decoration: none;
+}
+#copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#copyright hr{
+    width: 95%;
+    border-color: rgb(245, 210, 146,0.3);
+    border-style: solid;
+    height: 1px;
+
+    
 }
 
 
