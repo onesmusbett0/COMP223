@@ -9,20 +9,26 @@
 </head>
 <body style="">
     <header>
-        <img src="logo.png" alt="logo">
-        <h2>Africart</h2>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
+        <div>
+            <img src="logo.png" alt="logo">
+            <h2>Africart</h2>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+        </div>
 
         <form>
-            <input type="text" placeholder="search...">
-            <img src="search.png" alt="Search">
+            <input id="search-input" type="text" placeholder="search...">
+            <img src="search.png" id="search-btn" alt="Search">
         </form>
-        <img src="cart.png" alt="cart image">
-        <button id="signin-btn">Sign In</button>
 
+        <div>
+            <img id="cart-img" src="cart.png" alt="cart image">
+            <button class="btn-min" id="signin-btn">Sign In</button>
+        </div>
+        
     </header>
     <main>
+        <!-- Hero section -->
         <section id="hero-section">
             <h1>
                 Discover the latest Products
@@ -54,33 +60,73 @@
             </div>
         </div>
 
-         <section id="featured">
-            <h2>Featured Products</h2>
-            <p>Checkout our top pics for this season</p>
-
-           <div id="products">
-                <div id="products-div">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="">
-                    <div id="star">
-                        <i class="fa-solid fa-star"><span>4.5</span></i>
-                        <p>25 In stock</p>
-                    </div>                    
-                        <h6>Premium Wireless Headphones</h6>
-                        <p>High quality wireless headphones with active noise cancellation and 30-hour battery life</p>
-                        <h6>$299.99</h6>
-                    <button id="cart-btn">
-                        <i class="fa-solid fa-cart-arrow-down"></i>
-                        Add to Cart
-                    </button>
+        <!-- Featured products section -->
+        <section id="featured">
+            <div id="featured-main">
+                <div>
+                    <h2>Features Products</h2>
+                    <p>Check out our top picks this season</p>
                 </div>
+                <button class="btn-accent">View All <i class="fa-solid fa-arrow-right" ></i></button>
+            </div>
+                <!-- Product card -->
+                <div class="container">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="headphones image">
+                    <div id="ratings-div">
+                        <p><i class="fa-solid fa-star"></i>4.5</p>
+                        <p>25 in stock</p>
+                    </div>
+                    <div id="title-div">
+                        <h6>Premium Wireless Headphones</h6>
+                        <p>High-Quality Wireless headpones with active noise canceling and 30-hour battery life.</p>
+                        <h5>KES 2499</h5>
+                        <button id="add-to-cart">Add to Cart <i class="fa-solid fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1598965402089-897ce52e8355" alt="headphones image">
+                    <div id="ratings-div">
+                        <p><i class="fa-solid fa-star"></i>4.5</p>
+                        <p>25 in stock</p>
+                    </div>
+                    <div id="title-div">
+                        <h6>Premium Wireless Headphones</h6>
+                        <p>High-Quality Wireless headpones with active noise canceling and 30-hour battery life.</p>
+                        <h5>KES 2499</h5>
+                        <button id="add-to-cart">Add to Cart <i class="fa-solid fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                 
-
-                
-
-           </div>
-
+        <!-- Shop by category -->
+         <section id="category">
+            <h1>Shop by Category</h1>
+            <div id="category-div">
+                <!-- To be generated from a javascript object -->
+                <button>Audio</button>
+                <button>Computers</button>
+                <button>Phones</button>
+                <button>Cameras</button>
+                <button>Wearables</button>
+                <button>Tablets</button>
+                <button>Accessories</button>
+                <button>Monitors</button>
+            </div>
          </section>
+
+         <section id="newslater">
+            <i class="fa-solid fa-star"></i>
+            <h1>Join our Newslater</h1>
+            <p>Get inclusive deals and early access to new products.</p>
+            <form id="newslater-form">
+                <input type="email" id="newslater-email" placeholder="Enter your email">
+                <input type="submit" id="newslater-btn" class="btn-primary" value="Subscribe">
+
+            </form>
+         </section>
+
     </main>
 
 
