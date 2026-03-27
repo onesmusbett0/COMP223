@@ -1,5 +1,4 @@
 main{
-    height: 100vh  ;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -9,12 +8,13 @@ main{
         grid-template-columns: 1fr
     }
 }
-@media (max-width) {
+@media (max-width:500px) {
     main{
         grid-template-columns: 1fr 1fr;
     }
     
 }
+
 
 
 #side-bar{
