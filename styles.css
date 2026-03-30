@@ -415,6 +415,9 @@ footer a{
         grid-template-columns: 1fr;
         
     }
+    footer{
+        flex-direction: column;
+    }
 }
 
 #ratings-div,
