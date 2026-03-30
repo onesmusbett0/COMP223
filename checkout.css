@@ -5,20 +5,31 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+hr{
+    border-color: rgb(252, 223, 170);
+    height: 1px;
+    border-style: solid;
+}
+
+#checkout-div{
+    
+}
+
+#summary-div{
+    position: sticky;
+    border: 1px solid rgb(252, 223, 170);
+    margin: 30px;
+    padding: 50px;
+    height: fit-content;
+    top: 0;
+}
 @media(max-width:780px){
     main{
         grid-template-columns: 1fr;
     }
-}
-
-#checkout-div{
-
-}
-
-#summary-div{
-    border: 1px solid rgb(252, 223, 170);
-    margin: 30px;
-    padding: 50px;
+    #summary-div{
+        position: relative;
+    }
 }
 
 .summary-child{
@@ -42,6 +53,12 @@ main{
     align-items: start;
     padding: 20px;
     gap: 10px;
+}
+#total hr{
+    border: 1px solid rgb(252, 223, 170);
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 #total div{
     display: flex;
