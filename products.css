@@ -3,11 +3,7 @@ main{
     grid-template-columns: 1fr 3fr;
 }
 
-@media (max-width:730px){
-    main{
-        grid-template-columns: 1fr
-    }
-}
+
 @media (max-width:500px) {
     main{
         grid-template-columns: 1fr 1fr;
@@ -23,10 +19,18 @@ main{
     gap: 10px;
     position: sticky;
     z-index: 2;
-    top: 5;
-    height: auto;
+    top: 0;
+    height: fit-content;
     margin-left: 20px;
     
+}
+@media (max-width:730px){
+    main{
+        grid-template-columns: 1fr
+    }
+    #side-bar{
+        position: relative;
+    }
 }
 
 .btn-secondary, 
