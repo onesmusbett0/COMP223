@@ -316,7 +316,7 @@ footer a{
 
 
 @media(max-width:630px){
-    form input{
+    #search-input{
         display:none;
     }
 

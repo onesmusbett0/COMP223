@@ -6,6 +6,8 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 </head>
 <body>
@@ -30,6 +32,52 @@
 
     <main>
         <div id="checkout-div">
+            <a href="cart.html">&leftarrow; Back to cart</a>
+            <h1>Checkout</h1>
+            <form>
+                <div class="checkout-child" id="checkout-contact">
+                    <p><i style="color: orange; margin-right: 20px;" class="fa-solid fa-user"></i>Contact Information</p>
+                    <div style="display: flex; justify-content: space-between; width: 100%; gap: 20px">
+                        <div style="display: flex; flex-direction: column; width: 100%;">
+                            <label for="full-name">Full name</label>
+                            <input type="text" name="full-name" id="full-name">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width: 100%;">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOcation details -->
+                <div class="checkout-child" id="checkout-location">
+                    <p><i style="color: orange; margin-right: 20px;" class="fa-solid fa-location"></i>Contact Information</p>
+                    <div style="display: flex; justify-content: space-between; width: 100%; gap: 20px">
+                        <div style="display: flex; flex-direction: column; width: 100%;">
+                            <label for="shipping-address">Shipping Address</label>
+                            <input type="text" name="shipping-address" id="shipping-address">
+                        </div>
+                        <div style="display: flex; flex-direction: column; width: 100%;">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone number -->
+                <div class="checkout-child" id="checkout-pay">
+                    <p><i style="color: orange; margin-right: 20px;" class="fa-solid fa-credit-card"></i>Pay with Mpesa</p>
+                    <div style="display: flex; justify-content: space-between; width: 100%; gap: 20px">
+                        <div style="display: flex; flex-direction: column; width: 100%;">
+                            <label for="phone-number">Mpesa Phone number</label>
+                            <input type="phone" name="card-number" placeholder="0712345678" id="phone-number">
+                            <input type="submit" value="Place Order" id="pay-btn">
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
 
         </div>
         <div id="summary-div">

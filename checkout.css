@@ -65,3 +65,58 @@ hr{
     width: 100%;
     justify-content: space-between;
 }
+#checkout-div{
+    padding: 30px;
+}
+#checkout-div a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+
+}
+#checkout-div h1{
+    font-weight: 500;
+    margin-top: auto;
+    padding-top: 20px;
+}
+.checkout-child{
+    padding: 30px;
+    border: 1px solid #eed6b8;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.checkout-child p{
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+.checkout-child label{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+#pay-btn{
+    margin-top: 20px;
+    width: 60%;
+    color: white;
+    background-color: rgb(194, 50, 50);
+    align-self: center;
+    font-weight: bold;
+}
+input{
+    height: 40px;
+    background-color: #ffe6c8;
+    border-radius: 5px;
+    padding: 10px;
+}
+input:focus{
+    outline: 1px solid orange;
+}
+@media (max-width: 517px) {
+    .checkout-child div{
+        flex-direction: column;
+    }
+    
+}
