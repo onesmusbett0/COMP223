@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Africart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .cart-item-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #eed6b8;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            background: white;
+        }
+        .cart-item-row img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+            padding: 0 20px;
+        }
+        .cart-item-details h4 {
+            margin: 0 0 5px 0;
+        }
+        .cart-item-details p {
+            margin: 0;
+            color: gray;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quantity-btn {
+            background: #ffe6c8;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .remove-icon {
+            color: #c23232;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        #empty-cart-msg {
+            text-align: center;
+            padding: 50px;
+            font-size: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="logo">
+            <h2>Africart</h2>
+            <nav id="navbar">
+                <a href="/">Home</a>
+                <a href="products.html">Products</a>
+            </nav>
+        </div>
+
+        <form class="search-form">
+            <input id="search-input" type="text" placeholder="search...">
+            <img src="search.png" id="search-btn" alt="Search">
+        </form>
+
+        <div class="header-right">
+            <div id="cart-container" style="position: relative; cursor: pointer;">
+                <a href="cart.html">
+                    <img id="cart-img" src="cart.png" alt="cart image">
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+            <button class="btn-min" id="signin-btn"><a style="color: black;" href="auth.html">Sign In</a></button>
+            <div id="mobile-menu-btn" class="mobile-menu-icon" style="display: none;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="checkout-div">
+            <a href="products.html">&leftarrow; Continue Shopping</a>
+            <h1>Your Cart</h1>
+            <div id="cart-items-page-container">
+                <!-- Will be populated by JS -->
+            </div>
+            <div id="empty-cart-msg" style="display: none;">
+                <p>Your cart is empty.</p>
+                <a href="products.html" class="btn-primary" style="display: inline-block; width: auto; margin-top: 20px;">Shop Products</a>
+            </div>
+        </div>
+
+        <div id="summary-div">
+            <h2>Order Summary</h2>
+            <div id="cart-summary-details">
+                <div id="total" style="padding: 0;">
+                    <div>
+                        <p>Subtotal</p>
+                        <p id="cart-subtotal">KES 0</p>
+                    </div>
+                    <div>
+                        <p>Shipping</p>
+                        <p id="cart-shipping">KES 0</p>
+                    </div>
+                    <div>
+                        <p>Tax (16%)</p>
+                        <p id="cart-tax">KES 0</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Total</p>
+                        <p id="cart-total" style="font-weight: bold; font-size: 20px;">KES 0</p>
+                    </div>
+                </div>
+            </div>
+            <button id="proceed-to-checkout" class="btn-primary" style="margin-top: 20px; background-color: #c23232;">Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h4>About Africart</h4>
+            <p>Your one-stop shop for the latest tech products and accessories</p>
+        </div>
+        <div>
+            <h4>Shop</h4>
+            <a href="products.html">All Products</a>
+            <a href="products.html?category=Audio">Audio</a>
+            <a href="products.html?category=Computers">Computers</a>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <a href="#contact">Contact Us</a>
+            <a href="#shopping">Shopping Info</a>
+            <a href="#Returns">Returns</a>
+        </div>
+        <div>
+            <h4>About</h4>
+            <a href="auth.html">Sign In</a>
+        </div>
+    </footer>
+    <div id="copyright">
+        <hr>
+        <p>&copy 2026 -Africart. All rights Preserved</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

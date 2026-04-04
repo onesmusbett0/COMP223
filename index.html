@@ -9,24 +9,35 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-left">
             <img src="logo.png" alt="logo">
             <h2>Africart</h2>
-            <a href="/">Home</a>
-            <a href="products.html">Products</a>
+            <nav id="navbar">
+                <a href="/">Home</a>
+                <a href="products.html">Products</a>
+            </nav>
         </div>
 
-        <form>
+        <form class="search-form">
             <input id="search-input" type="text" placeholder="search...">
             <img src="search.png" id="search-btn" alt="Search">
         </form>
 
-        <div>
-            <img id="cart-img" src="cart.png" alt="cart image">
+        <div class="header-right">
+            <div id="cart-container" style="position: relative; cursor: pointer;">
+                <a href="cart.html">
+                    <img id="cart-img" src="cart.png" alt="cart image">
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
             <button class="btn-min" id="signin-btn"><a style="color: black;" href="auth.html">Sign In</a></button>
+            <div id="mobile-menu-btn" class="mobile-menu-icon" style="display: none;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
         
     </header>
+
     <main>
         <!-- Hero section -->
         <section id="hero-section">
@@ -71,34 +82,9 @@
             </div>
                 <!-- Product card -->
                  <div class="parent-container">
-                     <div class="container">
-                     <div class="product-card">
-                         <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="headphones image">
-                         <div id="ratings-div">
-                             <p><i class="fa-solid fa-star"></i>4.5</p>
-                             <p>25 in stock</p>
-                         </div>
-                         <div id="title-div">
-                             <h6>Premium Wireless Headphones</h6>
-                             <p>High-Quality Wireless headpones with active noise canceling and 30-hour battery life.</p>
-                             <h5>KES 2499</h5>
-                             <button id="add-to-cart">Add to Cart <i class="fa-solid fa-shopping-cart"></i></button>
-                         </div>
-                     </div>
-                     <div class="product-card">
-                         <img src="https://images.unsplash.com/photo-1598965402089-897ce52e8355" alt="headphones image">
-                         <div id="ratings-div">
-                             <p><i class="fa-solid fa-star"></i>4.5</p>
-                             <p>25 in stock</p>
-                         </div>
-                         <div id="title-div">
-                             <h6>Premium Wireless Headphones</h6>
-                             <p>High-Quality Wireless headpones with active noise canceling and 30-hour battery life.</p>
-                             <h5>KES 2499</h5>
-                             <button id="add-to-cart">Add to Cart <i class="fa-solid fa-shopping-cart"></i></button>
-                         </div>
-                     </div>
-                 </div>
+                    <div id="products-container" class="container">
+                        <!-- Will be populated by JS -->
+                    </div>
                  </div>
         </section>
 
@@ -162,5 +148,6 @@
             <p>&copy 2026 -Africart. All rights Preserved</p>
     </div>
     
+    <script src="script.js"></script>
 </body>
 </html>

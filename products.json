@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Premium Wireless Headphones",
+        "description": "High-Quality Wireless headphones with active noise canceling and 30-hour battery life.",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+        "rating": 4.5,
+        "stock": 25,
+        "category": "Audio"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch Series 5",
+        "description": "Stay connected with heart rate monitoring, GPS, and a stunning OLED display.",
+        "price": 5499,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+        "rating": 4.8,
+        "stock": 15,
+        "category": "Wearables"
+    },
+    {
+        "id": 3,
+        "name": "Professional DSLR Camera",
+        "description": "Capture every moment with incredible detail using this high-resolution DSLR.",
+        "price": 12999,
+        "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+        "rating": 4.7,
+        "stock": 8,
+        "category": "Cameras"
+    },
+    {
+        "id": 4,
+        "name": "Mechanical Gaming Keyboard",
+        "description": "RGB backlit mechanical keyboard with tactile switches for the ultimate gaming experience.",
+        "price": 3200,
+        "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
+        "rating": 4.6,
+        "stock": 30,
+        "category": "Accessories"
+    },
+    {
+        "id": 5,
+        "name": "Ultra-Slim Laptop",
+        "description": "Powerful and portable laptop with an 11th Gen processor and 16GB RAM.",
+        "price": 75000,
+        "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+        "rating": 4.9,
+        "stock": 5,
+        "category": "Computers"
+    },
+    {
+        "id": 6,
+        "name": "Wireless Noise Cancelling Earbuds",
+        "description": "Compact and powerful earbuds with superior sound quality and long-lasting battery.",
+        "price": 1800,
+        "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df",
+        "rating": 4.4,
+        "stock": 50,
+        "category": "Audio"
+    }
+]

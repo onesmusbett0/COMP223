@@ -11,22 +11,32 @@
 
 </head>
 <body>
-     <header>
-        <div>
+    <header>
+        <div class="header-left">
             <img src="logo.png" alt="logo">
             <h2>Africart</h2>
-            <a href="/">Home</a>
-            <a href="products.html">Products</a>
+            <nav id="navbar">
+                <a href="/">Home</a>
+                <a href="products.html">Products</a>
+            </nav>
         </div>
 
-        <form>
+        <form class="search-form">
             <input id="search-input" type="text" placeholder="search...">
             <img src="search.png" id="search-btn" alt="Search">
         </form>
 
-        <div>
-            <img id="cart-img" src="cart.png" alt="cart image">
+        <div class="header-right">
+            <div id="cart-container" style="position: relative; cursor: pointer;">
+                <a href="cart.html">
+                    <img id="cart-img" src="cart.png" alt="cart image">
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
             <button class="btn-min" id="signin-btn"><a style="color: black;" href="auth.html">Sign In</a></button>
+            <div id="mobile-menu-btn" class="mobile-menu-icon" style="display: none;">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
 
@@ -34,7 +44,7 @@
         <div id="checkout-div">
             <a href="cart.html">&leftarrow; Back to cart</a>
             <h1>Checkout</h1>
-            <form>
+            <form id="checkout-form">
                 <div class="checkout-child" id="checkout-contact">
                     <p><i style="color: orange; margin-right: 20px;" class="fa-solid fa-user"></i>Contact Information</p>
                     <div style="display: flex; justify-content: space-between; width: 100%; gap: 20px">
@@ -142,5 +152,6 @@
             <hr>
             <p>&copy 2026 -Africart. All rights Preserved</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
